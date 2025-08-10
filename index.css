@@ -194,22 +194,34 @@ footer{
    display: flex;
 }
 @media (max-width: 768px) {
-  .hero, .aboutUs, .ourPartners, .contact {
+  .hero,
+  .aboutUs,
+  .ourPartners,
+  .contact,
+  .ourServices {
     margin: 20px;
     padding: 20px;
   }
 
-  h1 {
-    font-size: 40px;
+  .hero, .whatWeDo, .contact {
+    background-size: contain, contain;
+    background-position: center top, center bottom;
   }
 
-  h2 {
-    font-size: 30px;
-  }
 
-  .CompanyStats, .services, .ourpartnersContainer, .footerContainer {
+  h1 { font-size: 40px; }
+  h2 { font-size: 30px; }
+  h3 { font-size: 22px; }
+
+
+  .CompanyStats,.services,.ourpartnersContainer,.footerContainer,.contactLinks2 {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+ .logos {
+    grid-template-columns: 1fr;
   }
 
   img {
@@ -218,9 +230,4 @@ footer{
     padding: 20px;
   }
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 
