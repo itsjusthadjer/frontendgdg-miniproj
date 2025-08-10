@@ -193,3 +193,34 @@ footer{
 .contactLinks2{
    display: flex;
 }
+@media (max-width: 768px) {
+  .hero, .aboutUs, .ourPartners, .contact {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .CompanyStats, .services, .ourpartnersContainer, .footerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
